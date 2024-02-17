@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             lblProcess = new Label();
             btnDownload = new Button();
             tableLayoutPanel1 = new TableLayoutPanel();
@@ -179,6 +180,7 @@
             BackColor = Color.Red;
             ClientSize = new Size(527, 293);
             Controls.Add(tableLayoutPanel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MainForm";
             Text = "Reds Music Downloader";
             tableLayoutPanel1.ResumeLayout(false);
